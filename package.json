@@ -1,0 +1,40 @@
+{
+  "name": "flexslider-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fax/flexslider-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fax/flexslider-test/issues"
+  },
+  "homepage": "https://github.com/Fax/flexslider-test#readme",
+  "devDependencies": {
+    "@types/angular": "^1.6.25",
+    "@types/angular-ui-router": "^1.1.37",
+    "@types/jquery": "^3.2.7",
+    "@types/moment": "^2.13.0",
+    "@types/webpack": "^3.0.4",
+    "@types/webpack-env": "^1.13.0",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "ts-loader": "^2.2.2",
+    "typescript": "^2.4.1",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.5",
+    "angular": "^1.6.5"
+  }
+}

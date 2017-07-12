@@ -1,75 +1,11 @@
 <html>
 <head>
-<link rel="stylesheet" href="/css/style.css">
-
-  <style>
-    #container{
-
-      height: 400px;
-      position: relative;
-    }
-    #myslider ul {
-      list-style: none;
-    }
-    #myslider {
-      width:200px;
-      display: block;
-      border: 2px solid black;
-      border-radius: 4px;
-      height: 100px;
-      
-    }
-
-    #myslider ul li div {
-      display: block;
-      width: 100px;
-      height: 100px;
-    }
-  </style>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-
-  </script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.min.js">
-
-  </script>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css" rel="stylesheet" />
+<title>Hell yeah!</title>
 </head>
 
-<body>
-  <div id="container">
-  <div id="myslider">
-    <ul class="slides">
-      <li>
-        <div>
-          It is working
-        </div>
-      </li>
-      <li>
-        <div>
-          it keeps working
-        </div>
-      </li>
-      <li>
+<body ng-app="fax-app">
 
-        <div>
-          slides until here
-        </div>
-      </li>
-      <li>
-        <div>
-          I am the lastone
-        </div>
-      </li>
-    </ul>
-
-  </div>
-  </div>
-<script>
-
-  $(document).ready(function(){
-    $("#myslider").flexslider({animation:'slide'});
-  })
-</script>
+<script src="js/bundle.js"></script>
 </body>
 
 </html>
