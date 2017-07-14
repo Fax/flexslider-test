@@ -1,5 +1,5 @@
 import * as angular from 'angular';
-
+require('../css/style.scss');
 angular
 .module('fax-app',[])
 .component('mycomponent',{

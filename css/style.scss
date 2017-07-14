@@ -1,4 +1,43 @@
----
----
 
-@import "{{ site.theme }}";
+$size: 20px !default;
+
+$pixel-art: (
+  heart:(
+  (o o r r o r r o o)
+  (o r r r r r r r o)
+  (o r r r r r r r o)
+  (o o r r r r r o o)
+  (o o o r r r o o o)
+  (o o o o r o o o o)
+  )
+);
+$colors : (
+  r: (red),
+  o: (transparent)
+);
+
+@function pixelize($matrix, $size){
+  $sh:'';
+  $rows: length($matrix);
+  @for $row from 1 through $rows{
+    $rn: nth($matrix, $row);
+    $cols: length($rn);
+    @for $col from 1 through $cols {
+      $dot: nth($rn,$col);
+      $sh: $sh + ($size*$col) + ' ' + ($size*$row) + ' ' + map-get($colors, $dot);
+      @if not ($col == length($rn) and $row == $rows) {
+        $sh: $sh + ',';
+      }
+    }
+  }
+ @return unquote($sh);
+}
+
+.sg::after {
+  height: $size;
+  width: $size;
+  content: '';
+  position: absolute;
+  box-shadow: pixelize(map-get($pixel-art,heart), $size);
+
+}
